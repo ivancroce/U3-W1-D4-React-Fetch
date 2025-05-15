@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+.card-img-ratio {
+  aspect-ratio: 2 / 3;
+  overflow: cover;
+}
+
+.card-selected {
+  background-color: #ecf19c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid rgb(255, 174, 0);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
