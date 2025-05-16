@@ -17,8 +17,8 @@ class SingleBook extends Component {
     const { selected } = this.state;
 
     return (
-      <Card className={`mb-3 h-100 shadow ${selected ? "card-selected" : ""}`} onClick={this.handleSelect}>
-        <Card.Img className="card-img-ratio" variant="top" src={book.img} alt={book.title} />
+      <Card className={`mb-3 shadow ${selected ? "card-selected" : ""}`}>
+        <Card.Img onClick={this.handleSelect} className="card-img-ratio" variant="top" src={book.img} alt={book.title} />
         <Card.Body>
           <Card.Title>{book.title}</Card.Title>
           <Card.Text>{book.price} €</Card.Text>

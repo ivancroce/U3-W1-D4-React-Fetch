@@ -1,5 +1,6 @@
 import { Component } from "react";
 import CommentsList from "./CommentsList";
+import AddComment from "./AddComment";
 
 const TOKEN =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODI1Y2MwNzFlYmU4MjAwMTUwOWYyZjQiLCJpYXQiOjE3NDczMDc1MjcsImV4cCI6MTc0ODUxNzEyN30.oIIpMLSVjbsiZGMMOvIU4E2Kjr5Q4afdr9ee-JSDxKg";
@@ -39,6 +40,7 @@ class CommentArea extends Component {
       <div className="mt-3">
         <h5>Comments for this book</h5>
         <CommentsList comments={this.state.comments} />
+        <AddComment />
       </div>
     );
   }
